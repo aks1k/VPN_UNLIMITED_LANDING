@@ -1,14 +1,22 @@
+/**
+  _body section
+ */
 body {
-  position: relative;
-
   &.bg-main {
       background-color: #262626;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       color : #FFFFFF;
   }
+}
 
-  & .main-container {
-    margin-left  : 170px;
-    margin-right : 85px;
+/**
+  Desktop styles
+ */
+@media(min-width:921px) {
+  body {
+    & .main-container {
+      margin-left  : 170px;
+      margin-right : 85px;
+    }
   }
 }

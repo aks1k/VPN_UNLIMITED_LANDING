@@ -1,0 +1,48 @@
+/**
+  _protect privacy section
+ */
+
+/**
+  Desktop styles
+ */
+@media(min-width:921px) {
+    .protect-privacy-section {
+      padding-bottom: 141px;
+      padding-top: 90px;
+      padding-left: 41px;
+      z-index: 2;
+    }
+
+    div.protect-privacy-img {
+      padding : 16px 13px 14px 50px;
+      margin-right: 97px;
+
+      & img {
+        width   : 932px;
+        height  : auto;
+      }
+    }
+
+    .protect-privacy-description-wrapper {
+
+    }
+
+    .protect-privacy-description-header {
+      margin-top: 11px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 68px;
+      max-width: 700px;
+    }
+
+    .protect-privacy-description {
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .protect-privacy-description-separator {
+
+    }
+}

@@ -1,8 +1,19 @@
 /* Base styles*/
-button {
-  cursor: pointer;
+a.btn-main {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-button.log-or-sign {
+
+.btn-main {
+  cursor: pointer;
+  outline: none;
+}
+.btn-main.log-or-sign {
   border-radius: 45px;
   width: 192px;
   height: 60px;
@@ -15,40 +26,43 @@ button.log-or-sign {
   margin-top: 26px;
   text-align: center;
 }
-button.log-or-sign:not(:last-child) {
+.btn-main.log-or-sign:not(:last-child) {
   margin-right: 30px;
 }
-button.get-vpn-btn {
+.btn-main.get-vpn-btn {
   background: linear-gradient(180deg, #282B30 0%, #442FF0 0.01%, #B909D6 100%);
   border-radius: 40px;
   color: white;
   width: 310px;
   height: 60px;
-  margin-left: 16px;
 }
-button .get-vpn-icon {
+.btn-main .get-vpn-icon {
   margin-right: 14px;
   width: 17px;
   height: 17px;
 }
-
 .log-or-sign-section {
   color: white;
 }
 
-body {
-  position: relative;
-}
+/**
+  _body section
+ */
 body.bg-main {
   background-color: #262626;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: #FFFFFF;
 }
-body .main-container {
-  margin-left: 170px;
-  margin-right: 85px;
-}
 
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  body .main-container {
+    margin-left: 170px;
+    margin-right: 85px;
+  }
+}
 .d-flex {
   display: -ms-flexbox !important;
   display: flex !important;
@@ -205,93 +219,161 @@ body .main-container {
 }
 
 /* Layout styles */
-.navbar-section {
-  margin-bottom: 164px;
-}
+/**
+  _navbar section
+ */
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  .navbar-section {
+    margin-bottom: 164px;
+  }
 
-.navbar-main {
-  display: flex;
-  padding-top: 31.1px;
-}
+  .navbar-main {
+    display: flex;
+    padding-top: 31.1px;
+  }
 
-.navbar-logo {
-  margin-right: 59.5px;
-  display: flex;
-}
-.navbar-logo .navbar-logo-img {
-  margin-right: 6px;
-  width: 40px;
-  height: 48px;
-  object-fit: cover;
-}
-.navbar-logo .navbar-logo-text {
-  height: 17.5px;
-  width: 129px;
-  align-self: center;
-}
+  .navbar-logo {
+    margin-right: 59.5px;
+    display: flex;
+  }
+  .navbar-logo .navbar-logo-img {
+    margin-right: 6px;
+    width: 40px;
+    height: 48px;
+    object-fit: cover;
+  }
+  .navbar-logo .navbar-logo-text {
+    height: 17.5px;
+    width: 129px;
+    align-self: center;
+  }
 
-.navbar-items {
-  display: flex;
-  margin-top: 15px;
-}
+  .navbar-items {
+    display: flex;
+    margin-top: 15px;
+  }
 
-.navbar-item {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  z-index: 2;
-  line-height: 19.1px;
-}
-.navbar-item:not(:last-child) {
-  margin-right: 58px;
-}
-.navbar-item:last-child {
-  margin-right: 435px;
-}
+  .navbar-item {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 2;
+    line-height: 19.1px;
+  }
+  .navbar-item:not(:last-child) {
+    margin-right: 58px;
+  }
+  .navbar-item:last-child {
+    margin-right: 435px;
+  }
 
-.navbar-item:hover {
-  color: white;
-  text-decoration: none;
-}
+  .navbar-item:hover {
+    color: white;
+    text-decoration: none;
+  }
 
-.navbar-gradient-bubble-img {
-  position: absolute;
-  width: 1364px;
-  height: 769px;
-  left: 554px;
-  top: -12px;
+  .navbar-gradient-bubble-img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    left: 554px;
+    top: -12px;
+  }
 }
-
-.get-vpn-section {
-  z-index: 2;
-  margin-left: 10px;
-}
-
-.get-vpn-text {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 76px;
-  z-index: 3;
-  max-width: 630px;
-}
+/**
+  _get-vpn section
+ */
 .get-vpn-text .text-main {
   color: white;
 }
-.get-vpn-text, .get-vpn-text text-absolutely-free {
+.get-vpn-text .text-absolutely-free {
   color: #a22cff;
-  margin-bottom: 37px;
 }
 
-.get-vpn-text-secondary {
-  font-size: 18px;
-  line-height: 36px;
-  margin-bottom: 87px;
-  z-index: 2;
-  max-width: 580px;
-  margin-left: 4px;
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  .get-vpn-section {
+    z-index: 2;
+    margin-left: 10px;
+  }
+
+  .get-vpn-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 76px;
+    z-index: 3;
+    max-width: 630px;
+  }
+  .get-vpn-text .text-absolutely-free {
+    margin-bottom: 37px;
+  }
+
+  .get-vpn-text-secondary {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 87px;
+    z-index: 2;
+    max-width: 580px;
+    margin-left: 4px;
+  }
+
+  .get-vpn-btn-wrapper {
+    margin-left: 16px;
+    margin-bottom: 193px;
+  }
 }
+/**
+  _protect privacy section
+ */
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  .protect-privacy-section {
+    padding-bottom: 141px;
+    padding-top: 90px;
+    padding-left: 41px;
+    z-index: 2;
+  }
+
+  div.protect-privacy-img {
+    padding: 16px 13px 14px 50px;
+    margin-right: 97px;
+  }
+  div.protect-privacy-img img {
+    width: 932px;
+    height: auto;
+  }
+
+  .protect-privacy-description-header {
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 68px;
+    max-width: 700px;
+  }
+
+  .protect-privacy-description {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+/**
+  Available systems section
+*/
+/**
+  Desktop styles
+ */
 
 /*# sourceMappingURL=main.css.map */

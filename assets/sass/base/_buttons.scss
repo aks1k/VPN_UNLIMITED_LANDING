@@ -1,5 +1,16 @@
-button {
+a.btn-main {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-main {
   cursor: pointer;
+  outline: none;
 
   &.log-or-sign {
     border-radius: 45px;
@@ -23,13 +34,16 @@ button {
     color : white;
     width: 310px;
     height: 60px;
-    margin-left: 16px;
   }
 
   & .get-vpn-icon {
     margin-right: 14px;
     width: 17px;
     height: 17px;
+  }
+
+  & .get-vpn-icon:focus {
+
   }
 
 }

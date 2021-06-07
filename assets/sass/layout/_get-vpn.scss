@@ -1,30 +1,48 @@
-.get-vpn-section {
-  z-index: 2;
-  margin-left: 10px;
-}
-
+/**
+  _get-vpn section
+ */
 .get-vpn-text {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 76px;
-  z-index: 3;
-  max-width: 630px;
-
   & .text-main {
     color : white;
   }
-  & ,text-absolutely-free {
+  & .text-absolutely-free {
     color : #a22cff;
-    margin-bottom : 37px;
   }
 }
 
-.get-vpn-text-secondary {
-  font-size: 18px;
-  line-height: 36px;
-  margin-bottom: 87px;
-  z-index: 2;
-  max-width: 580px;
-  margin-left: 4px;
+/**
+  Desktop styles
+ */
+@media(min-width:921px) {
+  .get-vpn-section {
+    z-index: 2;
+    margin-left: 10px;
+  }
+
+  .get-vpn-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 76px;
+    z-index: 3;
+    max-width: 630px;
+
+    & .text-absolutely-free {
+      margin-bottom : 37px;
+    }
+  }
+
+  .get-vpn-text-secondary {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 87px;
+    z-index: 2;
+    max-width: 580px;
+    margin-left: 4px;
+  }
+
+  .get-vpn-btn-wrapper {
+    margin-left: 16px;
+    margin-bottom: 193px;
+  }
 }

@@ -6,14 +6,47 @@
  */
 @media(min-width:921px) {
   .available-systems-header {
+    margin-top: 64px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    text-align: left;
 
   }
 
   .available-systems-cover {
-
+    width: 120px;
+    height: 100px;
+    background: #2E2E2E;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    text-align: center;
   }
 
   .available-systems-img {
+      & img {
+        padding-top: 18px;
+        padding-bottom: 20px;
+      }
+      & img.ios {
+        width: 29px;
+        height: 35px;
+      }
+
+      & img.windows {
+        width: 35px;
+        height: 35px;
+      }
+
+      & img.linux {
+        width: 35px;
+        height: 35px;
+      }
+  }
+
+  .available-systems-img-text {
+      color : white;
 
   }
 }

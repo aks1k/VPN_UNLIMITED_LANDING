@@ -45,12 +45,8 @@
     z-index: 2;
     line-height: 19.1px;
 
-    &:not(:last-child) {
+    &{
       margin-right: 58px;
-    }
-
-    &:last-child {
-      margin-right: 435px;
     }
   }
 
@@ -63,9 +59,9 @@
     position: absolute;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
     left: 554px;
     top: -12px;
+    z-index: 0;
   }
 
 }

@@ -48,6 +48,9 @@ a.btn-main {
 /**
   _body section
  */
+body {
+  z-index: 2;
+}
 body.bg-main {
   background-color: #262626;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -265,11 +268,8 @@ body.bg-main {
     z-index: 2;
     line-height: 19.1px;
   }
-  .navbar-item:not(:last-child) {
+  .navbar-item {
     margin-right: 58px;
-  }
-  .navbar-item:last-child {
-    margin-right: 435px;
   }
 
   .navbar-item:hover {
@@ -281,9 +281,9 @@ body.bg-main {
     position: absolute;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
     left: 554px;
     top: -12px;
+    z-index: 0;
   }
 }
 /**
@@ -350,8 +350,8 @@ body.bg-main {
     margin-right: 97px;
   }
   div.protect-privacy-img img {
-    width: 932px;
     height: auto;
+    object-fit: cover;
   }
 
   .protect-privacy-description-header {
@@ -368,6 +368,12 @@ body.bg-main {
     font-size: 18px;
     line-height: 30px;
   }
+
+  .protect-privacy-description-separator {
+    margin-top: 77px;
+    border-top: 1px solid #6A6A6A;
+    max-width: 400px;
+  }
 }
 /**
   Available systems section
@@ -375,5 +381,45 @@ body.bg-main {
 /**
   Desktop styles
  */
+@media (min-width: 921px) {
+  .available-systems-header {
+    margin-top: 64px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .available-systems-cover {
+    width: 120px;
+    height: 100px;
+    background: #2E2E2E;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .available-systems-img img {
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+  .available-systems-img img.ios {
+    width: 29px;
+    height: 35px;
+  }
+  .available-systems-img img.windows {
+    width: 35px;
+    height: 35px;
+  }
+  .available-systems-img img.linux {
+    width: 35px;
+    height: 35px;
+  }
+
+  .available-systems-img-text {
+    color: white;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

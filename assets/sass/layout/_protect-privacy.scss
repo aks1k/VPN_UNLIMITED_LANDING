@@ -18,8 +18,8 @@
       margin-right: 97px;
 
       & img {
-        width   : 932px;
-        height  : auto;
+        height: auto;
+        object-fit: cover;
       }
     }
 
@@ -43,6 +43,8 @@
     }
 
     .protect-privacy-description-separator {
-
+        margin-top: 77px;
+        border-top : 1px solid #6A6A6A;
+        max-width  : 400px;
     }
 }

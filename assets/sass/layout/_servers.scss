@@ -1,0 +1,59 @@
+/**
+  _servers section
+ */
+
+/**
+  Desktop styles
+ */
+
+@media(min-width:921px) {
+  .servers-section {
+    padding: 124px 33px 169px 39px;
+    display: flex;
+
+  }
+
+  .servers-map-img-wrapper {
+    height: 610px;
+    width: 941px;
+    background-image: url("../images/svg/servers-map.svg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    margin-right: 63px;
+    z-index: 3;
+  }
+
+  .servers-map-pin-img-wrapper {
+    position: relative;
+    left: 11.3%;
+    top: 36.8%;
+  }
+  .servers-map-pin-img {
+    max-width: 100%;
+    max-height: 608px;
+    height: auto;
+  }
+
+  .servers-map-header {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 68px;
+    text-align: left;
+    margin-bottom: 46px;
+    margin-top: 120px;
+  }
+
+  .servers-map-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 62px;
+    max-width: 445px;
+  }
+
+}

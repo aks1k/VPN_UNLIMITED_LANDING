@@ -21,8 +21,8 @@ a.btn-main {
   z-index: 2;
   color: white;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.1em;
+  line-height: 1.3%;
   margin-top: 26px;
   text-align: center;
 }
@@ -66,6 +66,10 @@ body.bg-main {
     margin-right: 85px;
   }
 }
+img {
+  box-sizing: content-box;
+}
+
 .d-flex {
   display: -ms-flexbox !important;
   display: flex !important;
@@ -308,8 +312,8 @@ body.bg-main {
   .get-vpn-text {
     font-style: normal;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 76px;
+    font-size: 3em;
+    line-height: 1.6em;
     z-index: 3;
     max-width: 630px;
   }
@@ -318,8 +322,8 @@ body.bg-main {
   }
 
   .get-vpn-text-secondary {
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.1em;
+    line-height: 2em;
     margin-bottom: 87px;
     z-index: 2;
     max-width: 580px;
@@ -339,7 +343,7 @@ body.bg-main {
  */
 @media (min-width: 921px) {
   .protect-privacy-section {
-    padding-bottom: 141px;
+    margin-bottom: 141px;
     padding-top: 90px;
     padding-left: 41px;
     z-index: 2;
@@ -359,18 +363,20 @@ body.bg-main {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 68px;
+    line-height: 60px;
     max-width: 700px;
   }
 
   .protect-privacy-description {
-    margin-top: 50px;
-    font-size: 18px;
-    line-height: 30px;
+    margin-top: 26px;
+    font-size: 1em;
+    line-height: 2em;
+    max-width: 573px;
+    font-weight: 400;
   }
 
   .protect-privacy-description-separator {
-    margin-top: 77px;
+    margin-top: 40px;
     border-top: 1px solid #6A6A6A;
     max-width: 400px;
   }
@@ -384,14 +390,18 @@ body.bg-main {
 @media (min-width: 921px) {
   .available-systems-header {
     margin-top: 64px;
-    font-size: 25px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 900;
-    line-height: 34px;
+    line-height: 2em;
     text-align: left;
   }
 
   .available-systems-cover {
+    text-decoration: none;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-bottom: 17px;
     width: 120px;
     height: 100px;
     background: #2E2E2E;
@@ -399,26 +409,88 @@ body.bg-main {
     border-radius: 10px;
     text-align: center;
   }
+  .available-systems-cover:hover {
+    text-decoration: none;
+  }
 
   .available-systems-img img {
     padding-top: 18px;
     padding-bottom: 20px;
   }
-  .available-systems-img img.ios {
+  .available-systems-img img.ios-img {
     width: 29px;
     height: 35px;
   }
-  .available-systems-img img.windows {
+  .available-systems-img img.windows-img {
     width: 35px;
     height: 35px;
   }
-  .available-systems-img img.linux {
+  .available-systems-img img.linux-img {
     width: 35px;
     height: 35px;
   }
 
   .available-systems-img-text {
     color: white;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 0.8em;
+  }
+}
+/**
+  _servers section
+ */
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  .servers-section {
+    padding: 124px 33px 169px 39px;
+    display: flex;
+  }
+
+  .servers-map-img-wrapper {
+    height: 610px;
+    width: 941px;
+    background-image: url("../images/svg/servers-map.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 63px;
+    z-index: 3;
+  }
+
+  .servers-map-pin-img-wrapper {
+    position: relative;
+    left: 11.3%;
+    top: 36.8%;
+  }
+
+  .servers-map-pin-img {
+    max-width: 100%;
+    max-height: 608px;
+    height: auto;
+  }
+
+  .servers-map-header {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 68px;
+    text-align: left;
+    margin-bottom: 46px;
+    margin-top: 120px;
+  }
+
+  .servers-map-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 62px;
+    max-width: 445px;
   }
 }
 

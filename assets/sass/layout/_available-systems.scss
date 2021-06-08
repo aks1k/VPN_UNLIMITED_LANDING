@@ -7,21 +7,28 @@
 @media(min-width:921px) {
   .available-systems-header {
     margin-top: 64px;
-    font-size: 25px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 900;
-    line-height: 34px;
+    line-height: 2em;
     text-align: left;
 
   }
 
   .available-systems-cover {
+    text-decoration: none;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-bottom: 17px;
     width: 120px;
     height: 100px;
     background: #2E2E2E;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.28);
     border-radius: 10px;
     text-align: center;
+      &:hover {
+        text-decoration: none;
+      }
   }
 
   .available-systems-img {
@@ -29,17 +36,17 @@
         padding-top: 18px;
         padding-bottom: 20px;
       }
-      & img.ios {
+      & img.ios-img {
         width: 29px;
         height: 35px;
       }
 
-      & img.windows {
+      & img.windows-img {
         width: 35px;
         height: 35px;
       }
 
-      & img.linux {
+      & img.linux-img {
         width: 35px;
         height: 35px;
       }
@@ -47,6 +54,9 @@
 
   .available-systems-img-text {
       color : white;
-
+      font-weight: 600;
+      font-size: 0.8em;
+      line-height: 0.8em;
   }
+
 }

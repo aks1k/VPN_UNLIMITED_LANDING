@@ -12,24 +12,9 @@ a.btn-main {
   cursor: pointer;
   outline: none;
 
-  &.log-or-sign {
-    border-radius: 45px;
-    width: 192px;
-    height: 60px;
-    background: linear-gradient(180deg, #282B30 0%, #18191D 100%);
-    z-index: 2;
-    color : white;
-    font-weight: 500;
-    font-size: 1.1em;
-    line-height: 1.3%;
-    margin-top: 26px;
-    text-align: center;
-  }
-  &.log-or-sign:not(:last-child) {
-    margin-right: 30px;
-  }
   &.get-vpn-btn {
-    background: linear-gradient(180deg, #282B30 0%, #442FF0 0.01%, #B909D6 100%);
+    background: linear-gradient(125.75deg, #FED507 -26.84%, #FE590F 121.96%);
+
     border-radius: 40px;
     color : white;
     width: 310px;
@@ -50,4 +35,28 @@ a.btn-main {
 
 .log-or-sign-section {
   color : white;
+}
+
+.btn-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.log-or-sign {
+  color:#FED507;
+  z-index: 2;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.log-or-sign:not(:last-child) {
+  margin-right: 4em;
 }

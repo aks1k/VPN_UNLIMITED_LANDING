@@ -3,12 +3,8 @@
  */
 body {
   z-index: 2;
-  //overflow: hidden;
-  &.bg-main {
-      background-color: #262626;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color : #FFFFFF;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color : #FFFFFF;
 }
 
 /**
@@ -17,8 +13,8 @@ body {
 @media(min-width:921px) {
   body {
     & .main-container {
-      margin-left  : 170px;
-      margin-right : 85px;
+      padding-left  : 154px;
+      padding-right : 148px;
     }
   }
 }

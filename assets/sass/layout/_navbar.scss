@@ -8,9 +8,21 @@
   .navbar-section {
     margin-bottom: 164px;
   }
+
+  .navbar-cover {
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    padding-top: 20px;
+    background: linear-gradient(180deg, #000000 -7.22%, rgba(0, 0, 0, 0) 146.67%);
+    top:0;
+  }
   .navbar-main {
     display: flex;
-    padding-top: 31.1px;
+  }
+
+  .navbar-main-wrapper {
+    padding-top: 21px;
   }
 
   .navbar-logo {
@@ -19,21 +31,21 @@
 
     & .navbar-logo-img {
       margin-right: 6px;
-      width: 40px;
-      height: 48px;
+      width: 22px;
+      height: 27px;
       object-fit: cover;
     }
 
     & .navbar-logo-text {
       height: 17.5px;
       width: 129px;
-      align-self: center;
+      padding-top: 4px;
     }
   }
 
   .navbar-items {
     display: flex;
-    margin-top: 15px;
+    padding-top: 4px;
   }
 
   .navbar-item {
@@ -59,7 +71,7 @@
     position: absolute;
     max-width: 100%;
     height: auto;
-    left: 554px;
+    left: 1008px;
     top: -12px;
     z-index: 0;
   }

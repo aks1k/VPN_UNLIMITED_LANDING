@@ -6,13 +6,12 @@
     <link href="assets/sass/main.css" rel="stylesheet">
     <link href="assets/css/normalize.css" rel="stylesheet">
     <meta width=device-width, initial-scale=1, user-scalable=no, maximum-scale = 1>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
-<body class="bg-main">
-    <div class="main-container">
+<body>
+    <div class="bg-main">
         <section class="navbar-section">
             <header>
-                <div class="d-flex justify-content-between">
+                <div class="main-container navbar-cover d-flex justify-content-between">
                     <nav>
                         <div class="navbar-main d-flex">
                             <div class="navbar-logo">
@@ -30,34 +29,36 @@
                         </div>
                     </nav>
                     <section class="d-flex log-or-sign-section">
-                        <button class="btn-main log-or-sign">Sign Up</button>
-                        <button class="btn-main log-or-sign">Log In</button>
+                        <a class="btn-link log-or-sign">Sign Up</a>
+                        <a class="btn-link log-or-sign">Log In</a>
                     </section>
                 </div>
             </header>
-            <img src="assets/images/svg/gradient-bubble.svg" class="navbar-gradient-bubble-img">
+            <img src="assets/images/svg/04_gold.svg" class="navbar-gradient-bubble-img">
         </section>
-        <section class="get-vpn-section d-flex flex-column">
-            <div class="get-vpn-text">
-                <div class="text-main">
-                    Protect Your Privacy
+        <div class="main-container">
+            <section class="get-vpn-section d-flex flex-column">
+                <div class="get-vpn-text">
+                    <div class="text-main">
+                        Protect Your Privacy
+                    </div>
+                    <div class="text-absolutely-free">
+                        Absolutely Free
+                    </div>
                 </div>
-                <div class="text-absolutely-free">
-                    Absolutely Free
+                <div class="get-vpn-text-secondary d-flex">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
                 </div>
-            </div>
-            <div class="get-vpn-text-secondary d-flex">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
-            </div>
-            <div class="get-vpn-btn-wrapper">
-                <a href="#" class="btn-main get-vpn-btn">
-                    <img class="get-vpn-icon" src="assets/images/svg/get-vpn-icon.svg" alt="get-vpn-icon">Get VPN Shield
-                </a>
-            </div>
-        </section>
+                <div class="get-vpn-btn-wrapper">
+                    <a href="#" class="btn-main get-vpn-btn">
+                        <img class="get-vpn-icon" src="assets/images/svg/get-vpn-icon.svg" alt="get-vpn-icon">Get VPN Shield
+                    </a>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <section class="protect-privacy-section d-flex">
+    <section class="protect-privacy-section d-flex bg-secondary">
         <div class="protect-privacy-img">
             <img src="assets/images/png/protect-privacy-img.png">
         </div>
@@ -109,11 +110,9 @@
             </section>
         </div>
     </section>
-    <section class="servers-section d-flex">
-        <div class="servers-map-img-wrapper col-7">
-            <div class="servers-map-pin-img-wrapper">
-                <img class="servers-map-pin-img" src="assets/images/svg/servers-map-pin.svg">
-            </div>
+    <section class="servers-section d-flex bg-secondary">
+        <div class="servers-map-img-wrapper">
+            <img class="servers-map-pin-img" src="assets/images/svg/servers-map-pin.svg">
         </div>
         <div>
             <div class="servers-map-header">

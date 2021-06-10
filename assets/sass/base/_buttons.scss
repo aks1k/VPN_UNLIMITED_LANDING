@@ -48,7 +48,11 @@ a.btn-main {
 }
 
 .log-or-sign {
-  color:#FED507;
+  background-image: linear-gradient(139.58deg, #FFE14A -44.74%, #BF3B00 145.6%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   z-index: 2;
   font-weight: 500;
   font-size: 1.1em;

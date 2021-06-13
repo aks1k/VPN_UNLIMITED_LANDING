@@ -362,7 +362,7 @@ img {
     line-height: 2em;
     margin-bottom: 80px;
     z-index: 2;
-    max-width: 580px;
+    max-width: 30.2vw;
     margin-left: 4px;
   }
 
@@ -395,6 +395,7 @@ img {
   div.protect-privacy-img img {
     height: auto;
     object-fit: cover;
+    width: 100%;
   }
 
   .protect-privacy-description-header {
@@ -485,7 +486,7 @@ img {
   .servers-map-img-wrapper {
     height: 610px;
     width: 941px;
-    background-image: url("../images/svg/servers-map.svg");
+    background-image: url("../images/png/servers-map.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

@@ -6,17 +6,19 @@
   Desktop styles
  */
 @media(min-width:921px) {
+    .protect-privacy-description-wrapper {
+      margin-right: 8vw;
+    }
+
     .protect-privacy-section {
       padding-bottom: 141px;
-      padding-top: 90px;
-      padding-left: 41px;
+      padding-top: 140px;
+      padding-left: 7.2vw;
       z-index: 2;
     }
 
     div.protect-privacy-img {
-      padding : 16px 13px 14px 50px;
-      margin-right: 97px;
-
+      padding: 10px 4vw 2px 5.5vw;
       & img {
         height: auto;
         object-fit: cover;
@@ -24,7 +26,7 @@
     }
 
     .protect-privacy-description-header {
-      margin-top: 11px;
+      margin-top: 94px;
       font-style: normal;
       font-weight: 900;
       font-size: 44px;
@@ -33,16 +35,10 @@
     }
 
     .protect-privacy-description {
-      margin-top  : 26px;
+      margin-top  : 50px;
       font-size   : 1em;
       line-height : 2em;
       max-width   : 573px;
       font-weight : 400;
-    }
-
-    .protect-privacy-description-separator {
-        margin-top : 40px;
-        border-top : 1px solid #6A6A6A;
-        max-width  : 400px;
     }
 }

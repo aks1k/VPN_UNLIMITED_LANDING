@@ -54,7 +54,7 @@ a.btn-main {
 }
 
 .log-or-sign:not(:last-child) {
-  margin-right: 4em;
+  margin-right: 3.7vw;
 }
 
 /**
@@ -73,8 +73,8 @@ body {
  */
 @media (min-width: 921px) {
   body .main-container {
-    padding-left: 154px;
-    padding-right: 148px;
+    padding-left: 8vw;
+    padding-right: 7.85vw;
   }
 }
 img {
@@ -244,6 +244,14 @@ img {
   background: #262626;
 }
 
+.text-main {
+  color: white;
+}
+
+.text-absolutely-free {
+  color: #a22cff;
+}
+
 /* Layout styles */
 /**
   _navbar section
@@ -253,7 +261,7 @@ img {
  */
 @media (min-width: 921px) {
   .navbar-section {
-    margin-bottom: 168px;
+    margin-bottom: 175px;
   }
 
   .navbar-cover {
@@ -304,7 +312,7 @@ img {
     line-height: 19.1px;
   }
   .navbar-item {
-    margin-right: 58px;
+    margin-right: 3vw;
   }
 
   .navbar-item:hover {
@@ -314,7 +322,7 @@ img {
 
   .navbar-gradient-bubble-img {
     position: absolute;
-    left: 52rem;
+    left: 43vw;
     display: block;
     height: auto;
     top: 1rem;
@@ -327,13 +335,6 @@ img {
 /**
   _get-vpn section
  */
-.get-vpn-text .text-main {
-  color: white;
-}
-.get-vpn-text .text-absolutely-free {
-  color: #a22cff;
-}
-
 /**
   Desktop styles
  */
@@ -377,16 +378,19 @@ img {
   Desktop styles
  */
 @media (min-width: 921px) {
+  .protect-privacy-description-wrapper {
+    margin-right: 8vw;
+  }
+
   .protect-privacy-section {
     padding-bottom: 141px;
-    padding-top: 90px;
-    padding-left: 41px;
+    padding-top: 140px;
+    padding-left: 7.2vw;
     z-index: 2;
   }
 
   div.protect-privacy-img {
-    padding: 16px 13px 14px 50px;
-    margin-right: 97px;
+    padding: 10px 4vw 2px 5.5vw;
   }
   div.protect-privacy-img img {
     height: auto;
@@ -394,7 +398,7 @@ img {
   }
 
   .protect-privacy-description-header {
-    margin-top: 11px;
+    margin-top: 94px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -403,17 +407,11 @@ img {
   }
 
   .protect-privacy-description {
-    margin-top: 26px;
+    margin-top: 50px;
     font-size: 1em;
     line-height: 2em;
     max-width: 573px;
     font-weight: 400;
-  }
-
-  .protect-privacy-description-separator {
-    margin-top: 40px;
-    border-top: 1px solid #6A6A6A;
-    max-width: 400px;
   }
 }
 /**
@@ -424,7 +422,7 @@ img {
  */
 @media (min-width: 921px) {
   .available-systems-header {
-    margin-top: 64px;
+    margin-top: 87px;
     font-size: 1.5em;
     font-style: normal;
     font-weight: 900;
@@ -435,7 +433,7 @@ img {
   .available-systems-cover {
     text-decoration: none;
     margin-top: 50px;
-    margin-right: 20px;
+    margin-right: 1vw;
     padding-bottom: 17px;
     width: 120px;
     height: 100px;

@@ -5,6 +5,7 @@
         <title>VPNSHIELD</title>
         <link href="assets/sass/main.css" rel="stylesheet">
         <link href="assets/css/normalize.css" rel="stylesheet">
+        <script src="assets/js/index.js"></script>
         <meta width=device-width, initial-scale=1, user-scalable=no, maximum-scale = 1>
     </head>
     <body>
@@ -19,12 +20,32 @@
                                     <img alt="vpnshield logo text" class="navbar-logo-text" src="assets/images/svg/vpn-logo-text.svg">
                                 </div>
                                 <div class="navbar-items">
-                                    <a class="navbar-item" href="#home">Home</a>
-                                    <a class="navbar-item" href="#about">About</a>
-                                    <a class="navbar-item" href="#plan">Plan</a>
-                                    <a class="navbar-item" href="#features">Features</a>
-                                    <a class="navbar-item" href="#server">Server</a>
-                                    <a class="navbar-item" href="#contact">Contacts</a>
+                                    <ul class="navbar-menu" id="navbar-menu">
+                                        <li class="active-item" data-anchor="home">
+                                            <a class="navbar-item active" href="#home">Home</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                        <li data-anchor="about">
+                                            <a class="navbar-item" href="#about">About</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                        <li data-anchor="plan">
+                                            <a class="navbar-item" href="#plan">Plan</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                        <li data-anchor="features">
+                                            <a class="navbar-item" href="#features">Features</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                        <li data-anchor="server">
+                                            <a class="navbar-item" href="#server">Server</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                        <li data-anchor="contact">
+                                            <a class="navbar-item" href="#contact">Contacts</a>
+                                            <div class="navbar-menu-bullet"></div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </nav>
@@ -108,7 +129,7 @@
                 <img src="assets/images/png/protect-privacy-img.png">
             </div>
         </section>
-        <section class="plans-section bg-main d-flex justify-content-center" id="plan">
+        <section class="plans-section bg-main" id="plan">
             <div class="plans-description-header">
                 <div>
                     We have Only 2 Pricing Plans
@@ -117,6 +138,79 @@
                     And Both Are Free
                 </div>
             </div>
+            <div class="plans-description-text">
+                <div>Just allow to use part of your computer performance and enjoy all VPN functions at 100%</div>
+                <div>We guarantee that our software will not complicate the speed of your device in any way!</div>
+            </div>
+            <div class="plans-type-wrapper">
+                <div class="plans-type-cover">
+                    <div class="plans-type-cover-header gold-plan">
+                        <span class="plans-type-cover-description">Gold Plan</span>
+                        <span class="plans-type-cover-price">0$</span>
+                    </div>
+                    <div class="plans-type-cover-img">
+                        <img src="assets/images/png/premium.png" alt="premium plan">
+                    </div>
+                    <div class="plans-type-cover-separator">
+                    </div>
+                    <ul class="plans-type-cover-advantages-list">
+                        <li class="plans-type-cover-advantages-list-item active">
+                            24/7 Customer support
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Verified No-logs Policy
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Live Chat Customer Support
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Data Security
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Backups
+                        </li>
+                    </ul>
+                    <div class="plans-type-cover-btn-wrapper">
+                        <a href="#" class="btn-main get-vpn-btn">
+                            <img class="get-vpn-icon" src="assets/images/svg/get-vpn-icon.svg" alt="get-vpn-icon">Get Gold Version
+                        </a>
+                    </div>
+                </div>
+                <div class="plans-type-cover">
+                    <div class="plans-type-cover-header basic-plan">
+                        <span class="plans-type-cover-description">Basic Plan</span>
+                        <span class="plans-type-cover-price">0$</span>
+                    </div>
+                    <div class="plans-type-cover-img">
+                        <img src="assets/images/png/basic.png" alt="basic plan">
+                    </div>
+                    <div class="plans-type-cover-separator"></div>
+                    <ul class="plans-type-cover-advantages-list">
+                        <li class="plans-type-cover-advantages-list-item active">
+                            24/7 Customer support
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Verified No-logs Policy
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item active">
+                            Live Chat Customer Support
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item">
+                            Data Security
+                        </li>
+                        <li class="plans-type-cover-advantages-list-item">
+                            Backups
+                        </li>
+                    </ul>
+                    <div class="plans-type-cover-btn-wrapper">
+                        <a href="#" class="btn-main get-vpn-btn btn-basic">
+                            <img class="get-vpn-icon" src="assets/images/svg/get-vpn-icon.svg" alt="get-vpn-icon">Get Basic Version
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="plans-polygon-left-img" src="assets/images/png/Polygon 5.png" alt="Polygon left icon">
+            <img class="plans-polygon-right-img" src="assets/images/png/Polygon4 2.png" alt="Polygon right icon">
         </section>
         <section class="servers-section d-flex bg-secondary" id="server">
             <div class="servers-map-img-wrapper">

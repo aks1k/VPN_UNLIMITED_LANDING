@@ -20,11 +20,15 @@ a.btn-main {
   width: 310px;
   height: 60px;
 }
+.btn-main.get-vpn-btn.btn-basic {
+  background: linear-gradient(180deg, #282B30 0%, #18191D 159.17%);
+}
 .btn-main .get-vpn-icon {
   margin-right: 14px;
   width: 17px;
   height: 17px;
 }
+
 .log-or-sign-section {
   color: white;
 }
@@ -297,6 +301,33 @@ img {
     padding-top: 4px;
   }
 
+  .navbar-menu {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .navbar-menu li {
+    margin-right: 3vw;
+    position: relative;
+  }
+  .navbar-menu li:not(.active-item) .navbar-menu-bullet {
+    display: none;
+  }
+
+  .navbar-menu-bullet {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 5px;
+    border-radius: 2px;
+    margin-top: 4px;
+    background: linear-gradient(139.58deg, #FFE14A -44.74%, #BF3B00 145.6%);
+  }
+
   .navbar-items {
     display: flex;
     padding-top: 4px;
@@ -310,9 +341,6 @@ img {
     font-style: normal;
     z-index: 2;
     line-height: 19.1px;
-  }
-  .navbar-item {
-    margin-right: 3vw;
   }
 
   .navbar-item:hover {
@@ -525,6 +553,145 @@ img {
     text-align: left;
     margin-bottom: 62px;
     max-width: 445px;
+  }
+}
+/**
+  _plans section
+ */
+/**
+  Desktop styles
+ */
+@media (min-width: 921px) {
+  .plans-section {
+    text-align: center;
+    padding-top: 181px;
+    padding-bottom: 140px;
+    position: relative;
+  }
+
+  .plans-description-header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .plans-description-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #B7B7B7;
+    margin-bottom: 107px;
+  }
+
+  .plans-type-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plans-type-cover {
+    background: #262626;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+  }
+  .plans-type-cover:not(:last-child) {
+    margin-right: 50px;
+  }
+  .plans-type-cover .gold-plan {
+    background: linear-gradient(139.58deg, #FFE14A -44.74%, #BF3B00 145.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .plans-type-cover .basic-plan {
+    color: #C4C4C4;
+  }
+
+  .plans-type-cover-description {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    margin-right: 12px;
+  }
+
+  .plans-type-cover-price {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 24px;
+  }
+
+  .plans-type-cover-header {
+    margin-top: 59px;
+    margin-bottom: 45px;
+  }
+
+  .plans-type-cover-img {
+    margin-bottom: 45px;
+  }
+  .plans-type-cover-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .plans-type-cover-separator {
+    border-top: 1px solid rgba(106, 106, 106, 0.4);
+    margin-bottom: 45px;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 300px;
+  }
+
+  .plans-polygon-left-img {
+    position: absolute;
+    top: 615.85px;
+    left: 3.3vw;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .plans-polygon-right-img {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .plans-type-cover-advantages-list {
+    padding-inline-start: 52px;
+    margin-bottom: 45px;
+  }
+
+  .plans-type-cover-advantages-list-item {
+    text-align: left;
+    font-size: 16px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .plans-type-cover-advantages-list-item::marker {
+    width: 8px;
+    height: 8px;
+    color: #828282;
+  }
+  .plans-type-cover-advantages-list-item.active {
+    color: white;
+  }
+  .plans-type-cover-advantages-list-item.active::marker {
+    width: 7.96px;
+    height: 8px;
+    color: #4CAF50;
+  }
+
+  .plans-type-cover-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 

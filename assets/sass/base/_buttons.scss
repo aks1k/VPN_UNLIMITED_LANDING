@@ -14,21 +14,20 @@ a.btn-main {
 
   &.get-vpn-btn {
     background: linear-gradient(125.75deg, #FED507 -26.84%, #FE590F 121.96%);
-
     border-radius: 40px;
     color : white;
     width: 310px;
     height: 60px;
   }
 
+  &.get-vpn-btn.btn-basic {
+    background: linear-gradient(180deg, #282B30 0%, #18191D 159.17%);
+  }
+
   & .get-vpn-icon {
     margin-right: 14px;
     width: 17px;
     height: 17px;
-  }
-
-  & .get-vpn-icon:focus {
-
   }
 
 }

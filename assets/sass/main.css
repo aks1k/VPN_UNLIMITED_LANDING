@@ -286,7 +286,7 @@ img {
   }
 
   .navbar-logo {
-    margin-right: 59.5px;
+    margin-right: 3.1vw;
     display: flex;
   }
   .navbar-logo .navbar-logo-img {
@@ -368,7 +368,6 @@ img {
  */
 @media (min-width: 921px) {
   .get-vpn-section {
-    z-index: 2;
     margin-left: 10px;
   }
 
@@ -377,7 +376,6 @@ img {
     font-weight: 900;
     font-size: 3em;
     line-height: 1.6em;
-    z-index: 3;
     max-width: 630px;
   }
   .get-vpn-text .text-absolutely-free {
@@ -389,7 +387,6 @@ img {
     color: #B7B7B7;
     line-height: 2em;
     margin-bottom: 80px;
-    z-index: 2;
     max-width: 30.2vw;
     margin-left: 4px;
   }
@@ -507,7 +504,7 @@ img {
  */
 @media (min-width: 921px) {
   .servers-section {
-    padding: 124px 33px 169px 39px;
+    padding: 124px 0 169px 5.6vw;
     display: flex;
   }
 
@@ -518,8 +515,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-right: 63px;
-    z-index: 3;
+    margin-right: 3.3vw;
   }
 
   .servers-map-pin-img-wrapper {
@@ -591,6 +587,7 @@ img {
   .plans-type-wrapper {
     display: flex;
     justify-content: center;
+    position: relative;
   }
 
   .plans-type-cover {

@@ -3,10 +3,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     setNavbarLink();
 
-    document.addEventListener("hashchange", function(event) {
-        console.log(1)
-        setNavbarLink();
-    });
+    window.addEventListener('hashchange', function () {
+        setNavbarLink()
+    })
+
 });
 
 function setNavbarLink() {
@@ -22,6 +22,4 @@ function setNavbarLink() {
     navbarItems.forEach(item => {
         compareString=='#' + item.dataset.anchor ? item.classList.add('active-item') : item.classList.remove('active-item');
     });
-
-    return;
 }

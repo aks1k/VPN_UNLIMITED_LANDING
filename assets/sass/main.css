@@ -350,10 +350,10 @@ img {
 
   .navbar-gradient-bubble-img {
     position: absolute;
-    left: 43vw;
+    left: 40.7vw;
     display: block;
     height: auto;
-    top: 1rem;
+    top: 0.6rem;
     max-width: 100%;
     z-index: 0;
     filter: drop-shadow(0px 15px 43px rgba(0, 0, 0, 0.57));
@@ -408,9 +408,7 @@ img {
   }
 
   .protect-privacy-section {
-    padding-bottom: 141px;
-    padding-top: 140px;
-    padding-left: 7.2vw;
+    padding: 140px 3.8vw 141px 7.2vw;
     z-index: 2;
   }
 
@@ -424,7 +422,7 @@ img {
   }
 
   .protect-privacy-description-header {
-    margin-top: 94px;
+    margin-top: 4.9vw;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -448,7 +446,7 @@ img {
  */
 @media (min-width: 921px) {
   .available-systems-header {
-    margin-top: 87px;
+    margin-top: 50px;
     font-size: 1.5em;
     font-style: normal;
     font-weight: 900;
@@ -530,6 +528,10 @@ img {
     height: auto;
   }
 
+  .servers-map-wrapper {
+    margin-right: 12vw;
+  }
+
   .servers-map-header {
     font-size: 50px;
     font-style: normal;
@@ -582,12 +584,15 @@ img {
     line-height: 30px;
     color: #B7B7B7;
     margin-bottom: 107px;
+    position: relative;
+    z-index: 2;
   }
 
   .plans-type-wrapper {
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 2;
   }
 
   .plans-type-cover {

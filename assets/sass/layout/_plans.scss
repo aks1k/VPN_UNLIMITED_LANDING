@@ -11,7 +11,6 @@
     padding-top: 181px;
     padding-bottom: 140px;
     position: relative;
-    z-index: 2;
   }
 
   .plans-description-header {
@@ -32,6 +31,8 @@
     line-height: 30px;
     color : #B7B7B7;
     margin-bottom: 107px;
+    position: relative;
+    z-index: 2;
   }
 
   .plans-type-wrapper {
